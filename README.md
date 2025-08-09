@@ -31,7 +31,7 @@ podman run --rm -it ghcr.io/solana-os/solana-dev-env:latest bash
 ### Mount your local project directory
 To work on your local Solana project inside the container, mount your project directory:
 ```bash
-docker run --rm -it -v /path/to/your/project:/project ghcr.io/thal-sh/solana-dev-env:latest bash
+docker run --rm -it -v /path/to/your/project:/project ghcr.io/solana-os/solana-dev-env:latest bash
 ```
 Replace `/path/to/your/project` with your actual local path.
 
