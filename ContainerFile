@@ -1,0 +1,14 @@
+FROM cgr.dev/chainguard/wolfi-base
+
+# Install dev tools
+RUN apk add --no-cache curl bash git build-base ca-certificates libudev pkgconf
+
+# Install Rust and Solana
+RUN curl https://sh.rustup.rs -sSf | bash -s -- -y --default-toolchain 1.73.0
+ENV PATH="/root/.cargo/bin:$PATH"
+
+RUN sh -c "$(curl -sSfL https://release.anza.xyz/stable/install)"
+ENV PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
+
+# Verify
+# RUN solana --version && cargo --version
