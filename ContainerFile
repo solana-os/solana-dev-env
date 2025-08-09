@@ -14,6 +14,3 @@ RUN set -euxo pipefail && \
     sh /tmp/install.sh
 
 ENV PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
-
-# Verify
-# RUN solana --version && cargo --version
