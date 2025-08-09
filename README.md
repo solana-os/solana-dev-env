@@ -11,21 +11,21 @@ A prebuilt Solana development environment designed for quick setup and fast iter
 ### Pull the image
 Using Docker:
 ```bash
-docker pull ghcr.io/thal-sh/solana-dev-env:latest
+docker pull ghcr.io/solana-os/solana-dev-env:latest
 ```
 Using Podman:
 ```bash
-podman pull ghcr.io/thal-sh/solana-dev-env:latest
+podman pull ghcr.io/solana-os/solana-dev-env:latest
 ```
 
 ### Run the container
 To start a container with an interactive shell:
 ```bash
-docker run --rm -it ghcr.io/thal-sh/solana-dev-env:latest bash
+docker run --rm -it ghcr.io/solana-os/solana-dev-env:latest bash
 ```
 Or with Podman:
 ```bash
-podman run --rm -it ghcr.io/thal-sh/solana-dev-env:latest bash
+podman run --rm -it ghcr.io/solana-os/solana-dev-env:latest bash
 ```
 
 ### Mount your local project directory
